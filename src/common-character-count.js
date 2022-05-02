@@ -12,12 +12,11 @@ const { NotImplementedError } = require('../extensions/index.js');
  * Strings have 3 common characters - 2 "a"s and 1 "c".
  */
 function getCommonCharacterCount(s1, s2) {
-  throw new NotImplementedError('Not implemented');
-//   let arr1 = s1.split('');
-//   let arr2 = s2.split('');
-//   let intersection = arr1.filter(item => arr2.includes(item));
-// let result = intersection.length;
-// return result;
+  let arr1 = s1.split('');
+  let arr2 = s2.split('');
+  let  inter = arr1.filter(i => arr2.includes(i));
+  let result = inter.length;
+  return result;
 }
 
 module.exports = {
